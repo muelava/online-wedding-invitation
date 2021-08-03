@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('/font/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('/font/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Sacramento';
+    src: url('/font/Sacramento.ttf');
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+p{
+    margin: 0;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/prewed\ \(3\).jpeg');
+    background-size: cover;
+    background-position-x: center;
+    filter: blur(2px);
+}
+
+.background::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background-color: #0000007c;
+}
+
+
+.container{
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.container p:first-child{
+    font-size: 28px;
+    font-family: 'Raleway-Regular';
+}
+
+.container p:nth-child(2){
+    font-size: 50px;
+    font-family: 'Raleway-Bold';
+}
+
+.container p:nth-child(3){
+    font-size: 26px;
+    font-family: 'Raleway-Regular';
+}
+
+.container p:nth-child(4){
+    font-size: 85px;
+    font-family: 'Sacramento';
+}
+
+.btn{
+    margin: auto auto 10px auto;
+    width: max-content;
+    height: max-content;
+    padding: 10px 20px;
+    background-color: #fffefe48;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation-name: button;
+    animation-delay: 2s;
+}
+
+.btn img{
+    display: block;
+    font-size: 18px;
+    font-family: 'Raleway-Regular';
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway-Regular';
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width : 425px){
+    .container p:first-child{
+        font-size: 24px;
+        font-family: 'Raleway-Regular';
+    }
+    
+    .container p:nth-child(2){
+        font-size: 35px;
+        font-family: 'Raleway-Bold';
+    }
+    
+    .container p:nth-child(3){
+        font-size: 20px;
+        font-family: 'Raleway-Regular';
+    }
+    
+    .container p:nth-child(4){
+        font-size: 72px;
+        margin: 10px 0;
+        font-family: 'Sacramento';
+    }
+
+}
+
+
+@media only screen and (max-width: 375px){
+    .container p:nth-child(4){
+        word-spacing: 200px;
+        line-height: 1.1em;
+    }
+}
