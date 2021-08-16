@@ -1,28 +1,28 @@
 /* Font */
 @font-face {
     font-family: 'Brockscript';
-    src: url('/font/BrockScript.ttf');
+    src: url('../font/BrockScript.ttf');
 }
 
 @font-face {
     font-family: 'Dancingscript-Regular';
-    src: url('/font/DancingScript-Regular.ttf');
+    src: url('../font/DancingScript-Regular.ttf');
 }
 @font-face {
     font-family: 'Dancingscript-Bold';
-    src: url('/font/DancingScript-Bold.ttf');
+    src: url('../font/DancingScript-Bold.ttf');
 }
 @font-face {
     font-family: 'Raleway-Regular';
-    src: url('/font/Raleway-Regular.ttf');
+    src: url('../font/Raleway-Regular.ttf');
 }
 @font-face {
     font-family: 'Raleway-Bold';
-    src: url('/font/Raleway-Bold.ttf');
+    src: url('../font/Raleway-Bold.ttf');
 }
 @font-face {
     font-family: 'Sacramento';
-    src: url('/font/Sacramento.ttf');
+    src: url('../font/Sacramento.ttf');
 }
 
 
@@ -76,7 +76,7 @@ section.hero{
     width: 100%;
     min-height: 100vh;
     padding-top: 3em;
-    background-image: url('/img/prewed\ \(2\).jpeg');
+    background-image: url('../img/prewed\ \(2\).jpeg');
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
@@ -120,7 +120,7 @@ section.hero .header p:nth-child(2){
 section.hero .footer{
     position: absolute;
     bottom: 0;
-    background-image: url('/batch/bottom.png');  
+    background-image: url('../batch/bottom.png');  
     background-color: rgba(255, 255, 255, 0);
     background-size: cover;
     background-position: center bottom; 
@@ -144,7 +144,7 @@ section.info::before{
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-image: url('/img/prewed\ \(4\).jpeg');
+    background-image: url('../img/prewed\ \(4\).jpeg');
     background-size: cover;
     filter: blur(2px);
     opacity: 0.1;
@@ -239,7 +239,7 @@ section.info .akad-header::before, .resepsi-header::before{
     transform: translateX(-70px);
     width: 60px;
     height: 4px;
-    background-image: url('/batch/line.jpg');
+    background-image: url('../batch/line.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -251,7 +251,7 @@ section.info .akad-header::after, .resepsi-header::after{
     transform: translateX(10px);
     width: 60px;
     height: 4px;
-    background-image: url('/batch/line.jpg');
+    background-image: url('../batch/line.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -402,7 +402,7 @@ section.prokes div{
     width: 85vw;
     height: 85vw;
     margin: 2em auto 7em auto;
-    background-image: url('/img/protokol@2x.png');
+    background-image: url('../img/protokol@2x.png');
     background-size: contain;
     box-shadow: 2px 5px 19px -3px rgba(0, 0, 0, 0.596);
 }
@@ -561,6 +561,8 @@ section.wish input:last-child{
     justify-content: center;
     font-size: 1.5rem;
 }
+
+
 
 @media only screen and (max-width: 300px){
     section.hero .header p:nth-child(2){
@@ -847,3 +849,5 @@ section.wish input:last-child{
 
     
 }
+
+
